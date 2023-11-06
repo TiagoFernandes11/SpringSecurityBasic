@@ -18,6 +18,7 @@ import java.util.List;
 public class eazyBankUserDetails implements UserDetailsService {
     @Autowired
     private CustomerRepository customerRepository;
+
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
         String userName, password = null;

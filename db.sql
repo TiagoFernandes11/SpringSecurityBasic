@@ -2,7 +2,7 @@ drop database if exists eazybank;
 create database if not exists eazybank;
 use eazybank;
 
-CREATE TABLE `users` (
+CREATE TABLE `customer` (
 `id` INT NOT NULL AUTO_INCREMENT,
 `username` VARCHAR(45) NOT NULL,
 `password` VARCHAR(45) NOT NULL,
