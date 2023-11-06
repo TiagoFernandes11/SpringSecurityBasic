@@ -1,10 +1,14 @@
 package udemy.SpringSecurityBasic.repository;
 
-import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
 import udemy.SpringSecurityBasic.model.Customer;
 
 import java.util.List;
 
-public interface CustomerRepository extends JpaRepository<Customer, Integer> {
+@Repository
+public interface CustomerRepository extends CrudRepository<Customer, Long> {
+
     List<Customer> findByEmail(String email);
+    
 }
