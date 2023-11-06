@@ -1,4 +1,4 @@
-package com.eazybytes.model;
+package udemy.SpringSecurityBasic.model;
 
 import java.sql.Date;
 
