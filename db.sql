@@ -2,6 +2,7 @@ drop database if exists eazybank;
 create database if not exists eazybank;
 use eazybank;
 
+
 CREATE TABLE `customer` (
   `customer_id` int NOT NULL AUTO_INCREMENT,
   `name` varchar(100) NOT NULL,
@@ -182,11 +183,3 @@ INSERT INTO `authorities` (`customer_id`, `name`)
 
  INSERT INTO `authorities` (`customer_id`, `name`)
    VALUES (1, 'VIEWBALANCE');
-
- DELETE FROM `authorities`;
-
- INSERT INTO `authorities` (`customer_id`, `name`)
-  VALUES (1, 'ROLE_USER');
-
- INSERT INTO `authorities` (`customer_id`, `name`)
-  VALUES (1, 'ROLE_ADMIN'););
