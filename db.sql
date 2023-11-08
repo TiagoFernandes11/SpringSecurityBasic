@@ -1,10 +1,6 @@
-create database eazybank;
-
+drop database if exists eazybank;
+create database if not exists eazybank;
 use eazybank;
-
-drop table `users`;
-drop table `authorities`;
-drop table `customer`;
 
 CREATE TABLE `customer` (
   `customer_id` int NOT NULL AUTO_INCREMENT,
@@ -193,4 +189,4 @@ INSERT INTO `authorities` (`customer_id`, `name`)
   VALUES (1, 'ROLE_USER');
 
  INSERT INTO `authorities` (`customer_id`, `name`)
-  VALUES (1, 'ROLE_ADMIN');
+  VALUES (1, 'ROLE_ADMIN'););
