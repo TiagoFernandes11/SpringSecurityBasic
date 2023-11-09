@@ -56,5 +56,4 @@ public class EazyBankUsernamePwdAuthenticationProvider implements Authentication
     public boolean supports(Class<?> authentication) {
         return (UsernamePasswordAuthenticationToken.class.isAssignableFrom(authentication));
     }
-
 }
